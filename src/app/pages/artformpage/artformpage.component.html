@@ -1,0 +1,26 @@
+<!-- <p>artformpage works!</p> -->
+
+<!-- <p>cards works!</p> -->
+
+<body style=background-color:aqua>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-3" *ngFor="let i of artform">
+          <div class="card" style="width: 18rem;">
+            <img class="card-image-top" src="../../assets/images/{{i.images}}" alt="" height="400px">
+            <div class="card-body">
+              <h5 class="card-title">{{i.name}}</h5>
+              <p class="card-text" style="height:80px">{{i.desc}}</p>
+              <!-- <a href="#" class="btn btn-primary">view more</a>  -->
+              <button (click)="gotoHere(i.id)">view more</button>
+
+
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+    </div>
+    </body>
+    
